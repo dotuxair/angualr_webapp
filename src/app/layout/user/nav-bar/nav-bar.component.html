@@ -1,0 +1,31 @@
+<nav class="fixed-bottom bg-light">
+  <div class="container-fluid mt-3 mb-3">
+    <div class="d-flex justify-content-center mb-1 mt-1">
+        <div class="mx-3 col-md-2">
+      <a class=" text-decoration-none" [ngClass]="isHome ? 'active' : '' " [routerLink]="['home']">
+        <i class="bi bi-house-fill me-1"></i>
+             @if(isHome){
+            Home
+        }</a
+      >
+    </div>
+      <a class="mx-3 col-md-2 text-decoration-none text-reset">
+        <i class="bi bi-people-fill"></i>
+    </a>
+
+      <a class="mx-3 col-md-2 text-decoration-none text-reset"> 
+        <i class="bi bi-wallet-fill"></i>
+   
+      </a>
+
+      <a class="mx-3 col-md-2 text-decoration-none text-reset">
+        <i class="bi bi-symmetry-horizontal"></i>
+
+      </a>
+      <a class="mx-3 text-decoration-none text-reset">
+        <i class="bi bi-person-fill"></i>
+
+      </a>
+    </div>
+  </div>
+</nav>

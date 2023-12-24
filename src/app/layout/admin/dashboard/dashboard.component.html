@@ -1,0 +1,21 @@
+
+
+<div class="d-flex">
+    <div id="sidebar">
+       <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <div id="content">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand text-secondary">Welcome, <strong>Uxair</strong></a>
+              <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+              <div class="d-flex text-muted">{{ currentTime | date:'short' }}</div>
+            </div>
+          </nav>
+   <router-outlet></router-outlet>
+    </div>
+</div>

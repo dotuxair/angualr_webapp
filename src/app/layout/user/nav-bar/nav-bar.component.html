@@ -1,31 +1,39 @@
-<nav class="fixed-bottom bg-light">
-  <div class="container-fluid mt-3 mb-3">
-    <div class="d-flex justify-content-center mb-1 mt-1">
-        <div class="mx-3 col-md-2">
-      <a class=" text-decoration-none" [ngClass]="isHome ? 'active' : '' " [routerLink]="['home']">
-        <i class="bi bi-house-fill me-1"></i>
-             @if(isHome){
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']">Alhayat Group</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-2">
+          <a class="nav-link " [routerLink]="['home']" routerLinkActive="underline-top-margin active text-success">
             Home
-        }</a
-      >
-    </div>
-      <a class="mx-3 col-md-2 text-decoration-none text-reset">
-        <i class="bi bi-people-fill"></i>
-    </a>
-
-      <a class="mx-3 col-md-2 text-decoration-none text-reset"> 
-        <i class="bi bi-wallet-fill"></i>
-   
-      </a>
-
-      <a class="mx-3 col-md-2 text-decoration-none text-reset">
-        <i class="bi bi-symmetry-horizontal"></i>
-
-      </a>
-      <a class="mx-3 text-decoration-none text-reset">
-        <i class="bi bi-person-fill"></i>
-
-      </a>
+          </a>
+        </li>
+        
+        <li class="nav-item mx-2">
+          <a class="nav-link" [routerLink]="['send-money']" routerLinkActive="underline-top-margin active text-success" >
+            Send Money</a>
+        </li>
+       
+        <li class="nav-item mx-2">
+          <a class="nav-link" [routerLink]="['wallet']" routerLinkActive="underline-top-margin active text-success">
+            Wallet</a>
+        </li>
+        <li class="nav-item  mx-2">
+          <a class="nav-link" [routerLink]="['team']" routerLinkActive="underline-top-margin active text-success">
+             Team</a>
+        </li>
+        <li class="nav-item  mx-2 ">
+          <a class="nav-link" [routerLink]="['profile']" routerLinkActive="underline-top-margin active text-success">
+            Profile</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-outline-secondary me-3" [routerLink]="['auth/login']"><i class="bi bi-telegram me-2"></i>Join Telegram</button>
+        <button class="btn btn-danger">Log Out</button>
+      </div>
     </div>
   </div>
 </nav>
